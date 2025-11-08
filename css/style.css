@@ -4,20 +4,32 @@
   margin: 0;
   padding: 0;
 }
-
+/* Tema padrão: dark */
 :root {
-  --white: #fff;
-  --dark1: #34344e;
-  --dark2: #3a415a;
-  --dark3: #566981;
-  --dark4: #89a7b1;
-  --dark5: #cbdad5;
-  --dark6: #2f2f46;
+  --text-color: #fff;
+  --color1: #34344e;
+  --color2: #3a415a;
+  --color3: #566981;
+  --color4: #89a7b1;
+  --color5: #cbdad5;
+  --color6: #2f2f46;
   --cyan1: #00FFFF;
 }
 
+.light {
+  --text-color: #000000; /* CORT DO TEXTO*/
+  --color1: #FFFFFF;  /* CORT DE FUNDO*/
+  --color2: #3a415a;  /* CORT DO TEXTO*/
+  --color3: #566981;  /* CORT DO TEXTO*/
+  --color4: #89a7b1;  /* CORT DO TEXTO*/
+  --color5: #cbdad5;  /* CORT DO TEXTO*/
+  --color6: #dddddc;  /* COR SECTIONS F5F5DC*/
+  --cyan1: #00FFFF;   /* CORT DO TEXTO*/
+}
+
+
 body {
-  background-color: var(--dark1);
+  background-color: var(--color1);
   height: 100vh; /*E ADAPTA A TELA */
   font-family: 'Lato';
 }
@@ -29,7 +41,7 @@ header {
   gap: 1rem; /*ESPAÇAMENTO ENTRE OS ELEMENTOS*/
   flex-wrap: wrap;  /*NA RESPONSIVIDADE ELE QUEBRA OS ELEMENTO PARA A LINHA ABAIXO*/
   padding: .8rem; /*1 rem equivale a 16px*/
-  background-color: var(--dark6);
+  background-color: var(--color6);
   min-height: 50px;
 }
 /* CONFIGURANDO A LOGO */
@@ -40,6 +52,7 @@ header {
 .img-logo {
   max-width: 60px;
   height: 100%;
+  border-radius: 50px;
 }
 
 /* ESTILIZANDO OS LINKS DE NAVEGAÇÃO NA TAG NAV */
@@ -54,11 +67,11 @@ nav {
 
 .nav-links {
   text-decoration: none;
-  color: var(--white);
+  color: var(--text-color);
 }
 
 .nav-links:hover{
-  color: var(--dark4);
+  color: var(--color4);
   transition: .4s; /*4 milésicmo de segundo*/
   text-decoration: underline;
   cursor: pointer;
@@ -80,13 +93,13 @@ nav {
 
 .btn-action{
   background-color: transparent;
-  border: 1px solid var(--white);
-  color: var(--white);
+  border: 1px solid var(--text-color);
+  color: var(--text-color);
 }
 /* EFEITOS AO PASSAR O MOUSE */
 .btn-action:hover{
-  background-color: var(--dark3);
-  border: 1px solid var(--dark3);
+  background-color: var(--color3);
+  border: 1px solid var(--color3);
 }
 
 .link-action{
@@ -125,13 +138,13 @@ section{
 }
 
 .first-section p {
-  color: var(--white);
+  color: var(--text-color);
 }
 
 /* Configurando o texto da primeira seção */
 h1{
   font-size: 4rem;
-  color: var(--white);
+  color: var(--text-color);
   letter-spacing: 8px;  /* Espaçamento entre as letras*/
 }
 
@@ -149,7 +162,7 @@ strong {
 }
 /* ESTILIZANDO A SEÇÃO DE EXPERIÊNCIAS */
 :is(.second-section, .fourth-section){   /*:is() é uma pseudo-classe do CSS que simplifica seletores longos ao agrupar vários seletores em uma lista*/
-  background-color: var(--dark2);
+  background-color: var(--color2);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -167,19 +180,19 @@ strong {
 }
 
 .second-section ul li{
-  color: var(--dark4);
+  color: var(--color4);
   letter-spacing: 2px;
   font-weight: bold;
 }
 
 .second-section ul li:hover{
-  color: var(--dark5);
+  color: var(--color5);
   transition: .4s;
   cursor: default;
   
 }
 .title{
-  color: var(--dark5);
+  color: var(--color5);
 }
 
 .third-section{
@@ -203,7 +216,7 @@ strong {
 
 .third-section > div p{
   max-width: 600px;
-  color: var(--white);
+  color: var(--text-color);
   text-align: justify;
 }
 
@@ -232,11 +245,11 @@ footer > div{
 
 #my-projects-list a{
   text-decoration: none;
-  color: var(--dark3);
+  color: var(--color3);
 }
 
 #my-projects-list a:hover{
-  color: var(--dark5);
+  color: var(--color5);
   transition: .4s;
   cursor: pointer;
 }
