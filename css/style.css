@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #fff;
+  --dark1: #34344e;
+  --dark2: #3a415a;
+  --dark3: #566981;
+  --dark4: #89a7b1;
+  --dark5: #cbdad5;
+  --dark6: #2f2f46;
+  --cyan1: #00FFFF;
+}
+
+body {
+  background-color: var(--dark1);
+  height: 100vh; /*E ADAPTA A TELA */
+  font-family: 'Lato';
+}
+/* CONFIGURANDO O HEADER */
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem; /*ESPAÇAMENTO ENTRE OS ELEMENTOS*/
+  flex-wrap: wrap;  /*NA RESPONSIVIDADE ELE QUEBRA OS ELEMENTO PARA A LINHA ABAIXO*/
+  padding: .8rem; /*1 rem equivale a 16px*/
+  background-color: var(--dark6);
+  min-height: 50px;
+}
+/* CONFIGURANDO A LOGO */
+.box-img-header {
+  height: 100%;
+}
+
+.img-logo {
+  max-width: 60px;
+  height: 100%;
+}
+
+/* ESTILIZANDO OS LINKS DE NAVEGAÇÃO NA TAG NAV */
+
+nav {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.nav-links {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav-links:hover{
+  color: var(--dark4);
+  transition: .4s; /*4 milésicmo de segundo*/
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* ESTILIZANDO OS BOTÕES */
+.box-btn-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+:is(button,.link-action) {
+  padding: .6rem;
+  font-size: .9rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn-action{
+  background-color: transparent;
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+/* EFEITOS AO PASSAR O MOUSE */
+.btn-action:hover{
+  background-color: var(--dark3);
+  border: 1px solid var(--dark3);
+}
+
+.link-action{
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+}
+
+/* FORMATANDO NOSSOS ELEMENTOS CENTRAIS */
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /*aumentando o espaço entre as sections*/
+}
+
+section{
+  padding: 4rem;
+}
+
+.first-section{
+  display: flex;
+  justify-content: space-evenly; /*distribui o espaços entre os elementos igualmente*/
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 650px;
+}
+
+/* Pegando a primeira div da section */
+
+.first-section > div{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  min-width: 300px;
+}
+
+.first-section p {
+  color: var(--white);
+}
+
+/* Configurando o texto da primeira seção */
+h1{
+  font-size: 4rem;
+  color: var(--white);
+  letter-spacing: 8px;  /* Espaçamento entre as letras*/
+}
+
+strong {
+  color: var(--cyan1);
+}
+.box-img-main{
+  max-width: 400px;
+  padding: 1rem;
+}
+
+.img-profile{
+  border-radius: 50%;
+  width: 100%; /*ajudar na responsividade da página*/
+}
+/* ESTILIZANDO A SEÇÃO DE EXPERIÊNCIAS */
+:is(.second-section, .fourth-section){   /*:is() é uma pseudo-classe do CSS que simplifica seletores longos ao agrupar vários seletores em uma lista*/
+  background-color: var(--dark2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.second-section ul{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;  /*alinhando na vertical os itens*/
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.second-section ul li{
+  color: var(--dark4);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.second-section ul li:hover{
+  color: var(--dark5);
+  transition: .4s;
+  cursor: default;
+  
+}
+.title{
+  color: var(--dark5);
+}
+
+.third-section{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.third-section > div{
+  display: flex;
+  gap: 4rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.third-section > div img{
+  width: 250px;
+  border-radius: 10px;
+}
+
+.third-section > div p{
+  max-width: 600px;
+  color: var(--white);
+  text-align: justify;
+}
+
+footer{
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+footer > div{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+#my-projects-list {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-projects-list a{
+  text-decoration: none;
+  color: var(--dark3);
+}
+
+#my-projects-list a:hover{
+  color: var(--dark5);
+  transition: .4s;
+  cursor: pointer;
+}
+
+:is(.img-profile, .img-who-am-i){
+  box-shadow: 1px 1px 1px 1px var(--cyan1);
+}
