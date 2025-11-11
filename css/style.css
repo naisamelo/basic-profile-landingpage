@@ -19,12 +19,12 @@
 .light {
   --text-color: #000000; /* CORT DO TEXTO*/
   --color1: #FFFFFF;  /* CORT DE FUNDO*/
-  --color2: #3a415a;  /* CORT DO TEXTO*/
-  --color3: #566981;  /* CORT DO TEXTO*/
-  --color4: #89a7b1;  /* CORT DO TEXTO*/
+  --color2: #F1F5F9;  /* CORT DO TEXTO*/
+  --color3: #2B7FFF;  /* CORT DO TEXTO*/
+  --color4: #45556C;  /* CORT DO TEXTO*/
   --color5: #cbdad5;  /* CORT DO TEXTO*/
-  --color6: #dddddc;  /* COR SECTIONS F5F5DC*/
-  --cyan1: #00FFFF;   /* CORT DO TEXTO*/
+  --color6: #F1F5F9;  /* COR SECTIONS*/
+  --cyan1:  #2B7FFF;   /* CORT DO TEXTO*/
 }
 
 
