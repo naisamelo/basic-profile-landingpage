@@ -1,7 +1,7 @@
 # 🌐 Basic Profile Landing Page
 ---
 
-## 🇧🇷 Sobre o Projeto
+## Sobre o Projeto
 
 **Basic Profile Landing Page** é uma página de portfólio simples desenvolvida para apresentar um **perfil profissional**, com **informações pessoais**, **redes sociais** e **projetos** em destaque.  
 O objetivo é oferecer uma **interface limpa e responsiva**, ideal para quem deseja criar uma presença digital pessoal ou profissional.
