@@ -7,6 +7,7 @@
 /* Tema padrão: dark */
 :root {
   --text-color: #fff;
+  --btn-color: #fff;
   --color1: #34344e;
   --color2: #3a415a;
   --color3: #566981;
@@ -19,6 +20,7 @@
 
 .light {
   --text-color: #000000; /* COR DO TEXTO*/
+  --btn-color: #fff;
   --color1: #FFFFFF;  /* COR DE FUNDO*/
   --color2: #F1F5F9;  /* COR DO TEXTO*/
   --color3: #2B7FFF;  /* COR DO TEXTO*/
@@ -102,6 +104,7 @@ nav {
 .btn-action:hover{
   background-color: var(--color3);
   border: 1px solid var(--color3);
+  color: var(--btn-color);
 }
 
 .link-action{
