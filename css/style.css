@@ -14,17 +14,19 @@
   --color5: #cbdad5;
   --color6: #2f2f46;
   --cyan1: #00FFFF;
+  --icons:#FFFFFF;
 }
 
 .light {
-  --text-color: #000000; /* CORT DO TEXTO*/
-  --color1: #FFFFFF;  /* CORT DE FUNDO*/
-  --color2: #F1F5F9;  /* CORT DO TEXTO*/
-  --color3: #2B7FFF;  /* CORT DO TEXTO*/
-  --color4: #45556C;  /* CORT DO TEXTO*/
-  --color5: #cbdad5;  /* CORT DO TEXTO*/
+  --text-color: #000000; /* COR DO TEXTO*/
+  --color1: #FFFFFF;  /* COR DE FUNDO*/
+  --color2: #F1F5F9;  /* COR DO TEXTO*/
+  --color3: #2B7FFF;  /* COR DO TEXTO*/
+  --color4: #45556C;  /* COR DO TEXTO*/
+  --color5: #155DFC;  /* COR DO TEXTO*/
   --color6: #F1F5F9;  /* COR SECTIONS*/
-  --cyan1:  #2B7FFF;   /* CORT DO TEXTO*/
+  --cyan1:  #2B7FFF;  /* COR DO TEXTO*/
+  --icons: #62748E; /*COR BOTÕES DE CONTATO*/
 }
 
 
@@ -234,6 +236,10 @@ footer > div{
   flex-wrap: wrap;
 }
 
+.bi{
+  fill: var(--icons);
+}
+
 #my-projects-list {
   display: flex;
   gap: 2rem;
@@ -245,7 +251,7 @@ footer > div{
 
 #my-projects-list a{
   text-decoration: none;
-  color: var(--color3);
+  color: var(--color4);
 }
 
 #my-projects-list a:hover{
