@@ -6,35 +6,36 @@
 }
 /* Tema padrão: dark */
 :root {
-  --text-color: #fff;
-  --btn-color: #fff;
-  --color1: #34344e;
-  --color2: #3a415a;
-  --color3: #566981;
-  --color4: #89a7b1;
-  --color5: #cbdad5;
-  --color6: #2f2f46;
-  --cyan1: #00FFFF;
-  --icons:#FFFFFF;
+  --text-primary: #fff; 
+  --btn-text-color: #fff;
+  --bg-primary: #34344e; /* (Fundo Principal) */
+  --bg-secondary: #3a415a; /* (Fundo de Seções) */
+  --btn-bg-hover: #566981; /*  (Fundo do Botão Hover) */
+  --text-secondary: #89a7b1; /* (Texto Secundário/Hover Nav) */
+  --color-highlight: #cbdad5; /* (Destaque Secundário/Título) */
+  --bg-header-footer: #2f2f46; /* (Fundo Header/Footer) */
+  --text-accent: #00FFFF; /* (Destaque Principal) */
+  --color-icons: #FFFFFF; /* icones */
 }
 
+/* Tema claro: light */
 .light {
-  --text-color: #000000; /* COR DO TEXTO*/
-  --btn-color: #fff;
-  --color1: #FFFFFF;  /* COR DE FUNDO*/
-  --color2: #F1F5F9;  /* COR DO TEXTO*/
-  --color3: #2b80fff7;  /* COR DO TEXTO*/
-  --color4: #45556C;  /* COR DO TEXTO*/
-  --color5: #155DFC;  /* COR DO TEXTO*/
-  --color6: #F1F5F9;  /* COR SECTIONS*/
-  --cyan1:  #2B7FFF;  /* COR DO TEXTO*/
-  --icons: #62748E; /*COR BOTÕES DE CONTATO*/
+  --text-primary: #000000; 
+  --btn-text-color: #fff; 
+  --bg-primary: #FFFFFF; 
+  --bg-secondary: #F1F5F9; 
+  --btn-bg-hover: #2b80fff7; 
+  --text-secondary: #45556C; 
+  --color-highlight: #155DFC; 
+  --bg-header-footer: #F1F5F9; 
+  --text-accent: #2B7FFF;
+  --color-icons: #62748E; 
 }
 
 
 body {
-  background-color: var(--color1);
-  height: 100vh; /*E ADAPTA A TELA */
+  background-color: var(--bg-primary); 
+  height: 100vh;
   font-family: 'Lato';
 }
 /* CONFIGURANDO O HEADER */
@@ -42,10 +43,10 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  gap: 1rem; /*ESPAÇAMENTO ENTRE OS ELEMENTOS*/
-  flex-wrap: wrap;  /*NA RESPONSIVIDADE ELE QUEBRA OS ELEMENTO PARA A LINHA ABAIXO*/
-  padding: .8rem; /*1 rem equivale a 16px*/
-  background-color: var(--color6);
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: .8rem;
+  background-color: var(--bg-header-footer); 
   min-height: 50px;
 }
 /* CONFIGURANDO A LOGO */
@@ -71,11 +72,11 @@ nav {
 
 .nav-links {
   text-decoration: none;
-  color: var(--text-color);
+  color: var(--text-primary); 
 }
 
 .nav-links:hover{
-  color: var(--color4);
+  color: var(--text-secondary); 
   transition: .4s; /*4 milésicmo de segundo*/
   text-decoration: underline;
   cursor: pointer;
@@ -97,14 +98,14 @@ nav {
 
 .btn-action{
   background-color: transparent;
-  border: 1px solid var(--text-color);
-  color: var(--text-color);
+  border: 1px solid var(--text-primary); 
+  color: var(--text-primary); 
 }
 /* EFEITOS AO PASSAR O MOUSE */
 .btn-action:hover{
-  background-color: var(--color3);
-  border: 1px solid var(--color3);
-  color: var(--btn-color);
+  background-color: var(--btn-bg-hover); 
+  border: 1px solid var(--btn-bg-hover); 
+  color: var(--btn-text-color); 
 }
 
 .link-action{
@@ -143,18 +144,18 @@ section{
 }
 
 .first-section p {
-  color: var(--text-color);
+  color: var(--text-primary); 
 }
 
 /* Configurando o texto da primeira seção */
 h1{
   font-size: 4rem;
-  color: var(--text-color);
-  letter-spacing: 8px;  /* Espaçamento entre as letras*/
+  color: var(--text-primary); 
+  letter-spacing: 8px; /* Espaçamento entre as letras*/
 }
 
 strong {
-  color: var(--cyan1);
+  color: var(--text-accent);
 }
 .box-img-main{
   max-width: 400px;
@@ -166,8 +167,8 @@ strong {
   width: 100%; /*ajudar na responsividade da página*/
 }
 /* ESTILIZANDO A SEÇÃO DE EXPERIÊNCIAS */
-:is(.second-section, .fourth-section){   /*:is() é uma pseudo-classe do CSS que simplifica seletores longos ao agrupar vários seletores em uma lista*/
-  background-color: var(--color2);
+:is(.second-section, .fourth-section){  /*:is() é uma pseudo-classe do CSS que simplifica seletores longos ao agrupar vários seletores em uma lista*/
+  background-color: var(--bg-secondary); 
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -185,19 +186,19 @@ strong {
 }
 
 .second-section ul li{
-  color: var(--color4);
+  color: var(--text-secondary); 
   letter-spacing: 2px;
   font-weight: bold;
 }
 
 .second-section ul li:hover{
-  color: var(--color5);
+  color: var(--color-highlight);
   transition: .4s;
   cursor: default;
   
 }
 .title{
-  color: var(--color5);
+  color: var(--color-highlight); 
 }
 
 .third-section{
@@ -221,7 +222,7 @@ strong {
 
 .third-section > div p{
   max-width: 600px;
-  color: var(--text-color);
+  color: var(--text-primary); 
   text-align: justify;
 }
 
@@ -230,6 +231,7 @@ footer{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  background-color: var(--bg-header-footer); /* Adicionado para consistência com o header */
 }
 
 footer > div{
@@ -240,7 +242,7 @@ footer > div{
 }
 
 .bi{
-  fill: var(--icons);
+  fill: var(--color-icons); 
 }
 
 #my-projects-list {
@@ -254,15 +256,15 @@ footer > div{
 
 #my-projects-list a{
   text-decoration: none;
-  color: var(--color4);
+  color: var(--text-secondary); 
 }
 
 #my-projects-list a:hover{
-  color: var(--color5);
+  color: var(--color-highlight); 
   transition: .4s;
   cursor: pointer;
 }
 
 :is(.img-profile, .img-who-am-i){
-  box-shadow: 1px 1px 1px 1px var(--cyan1);
+  box-shadow: 1px 1px 1px 1px var(--text-accent); 
 }
