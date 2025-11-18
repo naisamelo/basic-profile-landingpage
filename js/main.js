@@ -32,6 +32,7 @@ function showProject(data) {
 
 getProjects();
 
+//Função para alterar para o modo light
 function toggleMode() {
   const html = document.documentElement
   html.classList.toggle('light')
